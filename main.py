@@ -1,4 +1,4 @@
-from telebot import Updater, CommandHandler
+from telegram.exe import Updater, CommandHandler
 import requests
 
 # Список пользователей с доступом к боту
