@@ -65,6 +65,7 @@ TOKEN = '6819265079:AAEDpZL7LPZVYZOUfdF6Jv6XaIWSCbApAZc'
 
 # Создание объекта бота
 bot = Bot(token=TOKEN)
+updater = Updater(Bot)
 
 # Получение диспетчера для регистрации обработчиков
 dispatcher = updater.dispatcher
