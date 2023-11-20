@@ -67,7 +67,7 @@ TOKEN = '6819265079:AAEDpZL7LPZVYZOUfdF6Jv6XaIWSCbApAZc'
 updater = Updater(TOKEN, update_queue = asyncio.Queue(maxsize=0))
 
 # Получение диспетчера для регистрации обработчиков
-dispatcher = updater.dispatcher
+dispatcher = Updater.dispatcher
 
 # Регистрация обработчиков команд
 dispatcher.add_handler(CommandHandler("unlock", unlock))
