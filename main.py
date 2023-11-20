@@ -37,7 +37,7 @@ def lock(update, context):
         update.message.reply_text("У вас нет прав на блокировку")
 
 # Обработчик команды /exchange
-def вал(update, context):
+def exchange(update, context):
     global has_access
     user_id = str(update.message.from_user.id)
     if user_id in allowed_users:
@@ -49,7 +49,7 @@ def вал(update, context):
         update.message.reply_text("У вас нет доступа")
 
 # Обработчик команды /calc
-def калк(update, context):
+def calculator(update, context):
     global has_access
     user_id = str(update.message.from_user.id)
     if user_id in allowed_users:
