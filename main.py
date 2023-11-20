@@ -67,6 +67,12 @@ TOKEN = '6819265079:AAEDpZL7LPZVYZOUfdF6Jv6XaIWSCbApAZc'
 bot = Bot(token=TOKEN)
 updater = Updater(Bot)
 
+def __init__(
+        self,
+        bot: "Bot",
+        update_queue: "asyncio.Queue[object]",
+    ):
+
 # Получение диспетчера для регистрации обработчиков
 dispatcher = updater.dispatcher
 
