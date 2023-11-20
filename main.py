@@ -1,5 +1,4 @@
-from telegram.ext import Updater, CommandHandler
-from aiogram import Bot
+from telegram.ext import Updater, CommandHandler 
 import requests
 
 # Список пользователей с доступом к боту
@@ -64,14 +63,7 @@ def калк(update, context):
 TOKEN = '6819265079:AAEDpZL7LPZVYZOUfdF6Jv6XaIWSCbApAZc'
 
 # Создание объекта бота
-bot = Bot(token=TOKEN)
-updater = Updater(Bot)
-
-def dispatcher(
-        self,
-        bot: "Bot",
-        update_queue: "asyncio.Queue[object]",
-    ):
+updater = Updater(TOKEN)
 
 # Получение диспетчера для регистрации обработчиков
 dispatcher = updater.dispatcher
