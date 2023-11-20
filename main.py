@@ -65,7 +65,7 @@ TOKEN = '6819265079:AAEDpZL7LPZVYZOUfdF6Jv6XaIWSCbApAZc'
 
 # Создание объекта бота
 updater = Updater(TOKEN, update_queue = asyncio.Queue(maxsize=0))
-dispatcher = updater.Updater
+dispatcher = dispatcher.Updater(TOKEN, update_queue = asyncio.Queue(maxsize=0)) 
 
 start_handler = CommandHandler('start', start) 
 
