@@ -63,7 +63,7 @@ def калк(update, context):
 TOKEN = '6819265079:AAEDpZL7LPZVYZOUfdF6Jv6XaIWSCbApAZc'
 
 # Создание объекта бота
-updater = Updater(TOKEN)
+updater = Updater(TOKEN, update_queue = asyncio.Queue(maxsize=0))
 
 # Получение диспетчера для регистрации обработчиков
 dispatcher = updater.dispatcher
