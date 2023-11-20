@@ -1,4 +1,4 @@
-from telegram.ext import Updater, CommandHandler 
+from telegram.ext import Updater, CommandHandler, Bot
 import requests
 
 # Список пользователей с доступом к боту
@@ -37,7 +37,7 @@ def lock(update, context):
         update.message.reply_text("У вас нет прав на блокировку")
 
 # Обработчик команды /exchange
-def exchange(update, context):
+def вал(update, context):
     global has_access
     user_id = str(update.message.from_user.id)
     if user_id in allowed_users:
@@ -49,7 +49,7 @@ def exchange(update, context):
         update.message.reply_text("У вас нет доступа")
 
 # Обработчик команды /calc
-def calculator(update, context):
+def калк(update, context):
     global has_access
     user_id = str(update.message.from_user.id)
     if user_id in allowed_users:
@@ -63,7 +63,7 @@ def calculator(update, context):
 TOKEN = '6819265079:AAEDpZL7LPZVYZOUfdF6Jv6XaIWSCbApAZc'
 
 # Создание объекта бота
-updater = Updater(TOKEN)
+bot = Bot(token=TOKEN)
 
 # Получение диспетчера для регистрации обработчиков
 dispatcher = updater.dispatcher
