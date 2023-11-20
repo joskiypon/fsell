@@ -1,4 +1,5 @@
-from telegram.ext import Updater, CommandHandler, Bot
+from telegram.ext import Updater, CommandHandler
+from aiogram import Bot
 import requests
 
 # Список пользователей с доступом к боту
