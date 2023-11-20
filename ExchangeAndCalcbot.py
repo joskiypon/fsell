@@ -13,7 +13,7 @@ has_access = False
 
 # Обработчик команды /unlock
 def unlock(update, context):
-    global has_access
+  global has_access
     user_id = str(update.message.from_user.id)
     if user_id == 'admins':
         user_to_grant_access = context.args[0]
