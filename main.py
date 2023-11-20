@@ -1,5 +1,6 @@
 from telegram.ext import Updater, CommandHandler 
 import requests
+import asyncio
 
 # Список пользователей с доступом к боту
 allowed_users = ['6417262719', '6411071359']
